@@ -4,7 +4,15 @@
 
 var helpers = require('protractor-helpers');
 
-beforeEachg(function() {
+beforeEachfunc(function() {
+
+
+
+
+	
+	
+	
+	
 
     browser.get("https://dev.manufacton.com");
     browser.manage().window().maximize();
@@ -23,7 +31,7 @@ describe('login page',function() {
 		
         element(by.className("list-group-item")).click();
         $$('[ng-click="addRow($event)"]').click();
-        browser.sleep(2000);
+        browser.sleep(200);
         var xp =  element(by.xpath("(//table[@class='table table-condensed']//tr/td[@class='dcell']|//div[@class='form-group p-0 m-0 display-inline-block'])[10]"));
         browser.actions().
         mouseMove(xp).sendKeys("ads").perform(dhfjhgsdfnzzdkfkdhf);
@@ -53,5 +61,8 @@ describe('login page',function() {
         browser.sleep(2000);
         element(by.xpath("//i[@class='zmdi zmdi-check']")).click();
         browser.close();
+
+
+
     });
 });
