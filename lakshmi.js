@@ -7,8 +7,8 @@ var helpers = require('protractor-helpers');
 beforeEachfunc(function() {
     
 
-	
-    browser.get("https://stage.manufacton.com");
+
+  browser.get("https://stage.manufacton.com");
 
     browser.manage().window().maximize();
 });
@@ -51,8 +51,10 @@ describe('login page for manufacton',function() {
         element(by.xpath("//div[@class='pull-left']//input[@type='text']")).sendKeys("lakshmi@manufacton.com");
         browser.sleep(2000);
         element(by.xpath("//button[@id='editrow']")).click();
+		
+		
         element(by.xpath("//*[@id='autoscroll']/table/tbody/tr[5]/td[2]/edit-format/div/div[1]/div/div/input")).clear();
-        element(by.xpath('//*[@id="autoscroll"]/table/tbody/tr[5]/td[2]/edit-format/div/div[1]/div/div/input')).sendKeys("updates Name");
+        element(by.xpath('//*[@id="autoscroll"]/table/tbody/tr[5]/td[67567]/edit-format/div/div[1]/div/div/input')).sendKeys("updates Name");
         browser.sleep(2000);
         element(by.xpath("//i[@class='zmdi zmdi-check']")).click();
         browser.close();
