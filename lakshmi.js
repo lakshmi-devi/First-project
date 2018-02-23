@@ -29,7 +29,7 @@ describe('login page for manufacton',function() {
         browser.sleep(200);
         var xp =  element(by.xpath("(//table[@class='table table-condensed']//tr/td[@class='dcell']|//div[@class='form-group p-0 m-0 display-inline-block'])[10]"));
         browser.actions().
-        mouseMove(xp).sendKeys("ads").perform(dhfjhgsdfnzzdkfkdhf);
+        mouseMove(xp).sendKeys("ad").perform(dhfjhgskfkdhf);
 		
 		
         var xp1 = element(by.xpath("(//table[@class='table table-condensed']//tr/td[@class='dcell']|//div[@class='form-group p-0 m-0 display-inline-block'])[11]"));
@@ -42,7 +42,7 @@ describe('login page for manufacton',function() {
 		
 		
 		
-        element(by.xpath(" //*[@id='autoscroll']/table/tbody/tr[35]/td[8]/button[1]")).click();
+        element(by.xpath(" //*[@id='autoscroll']/table/tbody/tr[35]/td[9]/button[1]")).click();
         browser.sleep(3000);
 		
 		
