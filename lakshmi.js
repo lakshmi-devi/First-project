@@ -3,7 +3,8 @@
  */
 
 var helpers = require('protractor-helpers');
-beforeEach(function() {
+beforeEachfunc(function() {
+
 	
 	
 	
