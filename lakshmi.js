@@ -12,10 +12,10 @@ beforeEachg(function() {
 	
 	
 	
-    browser.get("https://dev.manufacton.com");
+    browser.get("https://stage.manufacton.com");
     browser.manage().window().maximize();
 });
-describe('login page',function() {
+describe('login page for manufacton',function() {
     it('login', function (login) {
 
 
