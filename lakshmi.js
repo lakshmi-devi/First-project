@@ -4,6 +4,11 @@
 
 var helpers = require('protractor-helpers');
 beforeEach(function() {
+	
+	
+	
+	
+	
     browser.get("https://dev.manufacton.com");
     browser.manage().window().maximize();
 });
