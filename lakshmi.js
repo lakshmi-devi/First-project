@@ -10,7 +10,11 @@ beforeEach(function() {
 describe('login page',function() {
     it('login', function (login) {
 
-        element(by.model("user.email")).sendKeys("test@ads.comp");
+
+
+
+
+        element(by.model("user.email")). sendKeys("test@ads.comp");
         element(by.model("user.password")).sendKeys("12345678");
         element(by.css("[value='Login']")).click();
         browser.sleep(10000);
